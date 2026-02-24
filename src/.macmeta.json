@@ -1,0 +1,82 @@
+{
+  "_version": 1,
+  "files": {
+    "Hermes.proj": {
+      "resource_fork": "derez",
+      "data_fork": "empty"
+    },
+    "Hermes": {
+      "resource_fork": "derez",
+      "data_fork": "empty"
+    },
+    "FileTrans.p": {
+      "data_fork": "mactext"
+    },
+    "FileTrans2.p": {
+      "data_fork": "mactext"
+    },
+    "HUtils2.p": {
+      "data_fork": "mactext"
+    },
+    "HUtils3.p": {
+      "data_fork": "mactext"
+    },
+    "HUtils4.p": {
+      "data_fork": "mactext"
+    },
+    "HUtils5.p": {
+      "data_fork": "mactext"
+    },
+    "Hermes.p": {
+      "data_fork": "mactext"
+    },
+    "HermesUtils.p": {
+      "data_fork": "mactext"
+    },
+    "Initial.p": {
+      "data_fork": "mactext"
+    },
+    "InpOut.p": {
+      "data_fork": "mactext"
+    },
+    "InpOut2.p": {
+      "data_fork": "mactext"
+    },
+    "InvalidSerial.lib": {
+      "type": "LIB ",
+      "creator": "KAHL",
+      "resource_fork": "derez",
+      "data_fork": "empty"
+    },
+    "MesEdit.p": {
+      "data_fork": "mactext"
+    },
+    "NodePrefs.p": {
+      "data_fork": "mactext"
+    },
+    "QuickValidate.lib": {
+      "type": "LIB ",
+      "creator": "KAHL",
+      "resource_fork": "derez",
+      "data_fork": "empty"
+    },
+    "SerialNumbers.p": {
+      "data_fork": "mactext"
+    },
+    "SystPref.p": {
+      "data_fork": "mactext"
+    },
+    "Terminal.p": {
+      "data_fork": "mactext"
+    },
+    "User.p": {
+      "data_fork": "mactext"
+    },
+    "ValidateSerial.lib": {
+      "type": "LIB ",
+      "creator": "KAHL",
+      "resource_fork": "derez",
+      "data_fork": "empty"
+    }
+  }
+}

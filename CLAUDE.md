@@ -9,12 +9,13 @@ Hermes BBS is a classic Macintosh Bulletin Board System (BBS) written in THINK P
 ## Repository Structure
 
 ```
-src/                    # Hermes 2.2 source code (THINK Pascal .p files, Rez resources)
+src/                    # Hermes 2.2 source code (THINK Pascal .p files, Rez resources, .lib libraries)
+serialnumbers/          # Serial number generation/validation C source and THINK C project files
 macfiles.py             # Converts classic Mac files to/from git-safe formats
 prepare.sh              # Build tool: converts src/ between Unix and Mac OS file formats
 ```
 
-Older versions, externals, utilities, configs, and serial number tools are in the separate private **hermeslegacy** repository.
+Older versions, externals, utilities, and configs are in the separate private **hermeslegacy** repository.
 
 ## Development Environment
 
@@ -58,6 +59,22 @@ The Hermes 2.2 codebase is organized into Pascal units (.p files) in `src/`:
 - **MesEdit.p**: Message editor
 - **NodePrefs.p**: Node configuration
 - **SystPref.p**: System preferences
+- **SerialNumbers.p**: Serial number validation unit (external function declarations linking to .lib files)
+- **Security.p**: Sysop security-level configuration external
+
+### Serial Number / Copy Protection System
+
+The serial number system validates BBS registration through compiled C libraries linked as THINK Pascal externals:
+
+- **SerialNumbers.p**: Pascal unit declaring 5 external functions: `TrickySerialToBinary`, `TrickyQuickValidateSerial`, `TrickyValidateSerial`, `pInvokeInvalidSerial`, `InvalidSerial`
+- **InvalidSerial.lib.r**, **QuickValidate.lib.r**, **ValidateSerial.lib.r**: Compiled C libraries (resource-fork-only, stored as Rez `.r` files) implementing the serial validation logic
+- **`{$IFC COPYPROTECT}`** conditional compilation blocks in InpOut.p, InpOut2.p, MesEdit.p gate periodic validation checks
+- **`screwUp` global flag**: When set (by failed serial checks, date tampering, or CODE resource checksum mismatches), subtly degrades BBS functionality rather than outright blocking access
+- **`QuickCheckSerial`** (in Initial.p): Startup validation that converts and checks the serial string, distributing the binary form to all nodes
+- **30-day trial**: Unregistered copies enforce a time limit in HUtils4.p via `intSystRec.startDate` comparison
+- **Anti-tamper**: MesEdit.p checksums CODE resources 3, 10, 12; User.p checks for impossible date combinations; HUtils4.p detects clock rollback
+
+The serial number generation/validation C source is in `serialnumbers/` (BigInt math, key generation, validation algorithms, THINK C project files, and the RegStatus sysop registration tool).
 
 ### Resource Files
 
@@ -127,7 +144,7 @@ Three conversion concerns are handled:
 
 ### Important Notes
 
-- The `src/*.p` files are still in MacRoman/CR format (pre-dating this conversion). A follow-up conversion is planned.
+- The `src/*.p` files have been converted to UTF-8/LF format via `macfiles.py convert`.
 - `.r` files are text and can be diffed in git. They contain hex-encoded resource data with type codes and IDs visible.
 - The `.gitattributes` file marks `.r` and `.macmeta.json` as text, and archives as binary.
 

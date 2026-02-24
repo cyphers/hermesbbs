@@ -1,0 +1,217 @@
+{
+  "_version": 1,
+  "files": {
+    "BigInt.c": {
+      "type": "TEXT",
+      "creator": "KAHL",
+      "resource_fork": "derez",
+      "data_fork": "mactext"
+    },
+    "BigInt.h": {
+      "type": "TEXT",
+      "creator": "KAHL",
+      "data_fork": "mactext"
+    },
+    "GenerateSerial.c": {
+      "type": "TEXT",
+      "creator": "KAHL",
+      "resource_fork": "derez",
+      "data_fork": "mactext"
+    },
+    "GenerateSerial.h": {
+      "type": "TEXT",
+      "creator": "KAHL",
+      "resource_fork": "derez",
+      "data_fork": "mactext"
+    },
+    "HermHeaders.h": {
+      "type": "TEXT",
+      "creator": "ALFA",
+      "resource_fork": "derez",
+      "data_fork": "mactext"
+    },
+    "HexStrToBigInt.c": {
+      "type": "TEXT",
+      "creator": "KAHL",
+      "resource_fork": "derez",
+      "data_fork": "mactext"
+    },
+    "HexStrToBigInt.h": {
+      "type": "TEXT",
+      "creator": "KAHL",
+      "resource_fork": "derez",
+      "data_fork": "mactext"
+    },
+    "Invalid Serial π": {
+      "type": "PROJ",
+      "creator": "KAHL",
+      "resource_fork": "derez",
+      "data_fork": "empty"
+    },
+    "InvalidSerial.c": {
+      "type": "TEXT",
+      "creator": "KAHL",
+      "resource_fork": "derez",
+      "data_fork": "mactext"
+    },
+    "InvalidSerial.h": {
+      "type": "TEXT",
+      "creator": "KAHL",
+      "data_fork": "mactext"
+    },
+    "InvalidSerial.lib": {
+      "type": "LIB ",
+      "creator": "KAHL",
+      "resource_fork": "derez",
+      "data_fork": "empty"
+    },
+    "NewBigInt.c": {
+      "type": "TEXT",
+      "creator": "KAHL",
+      "resource_fork": "derez",
+      "data_fork": "mactext"
+    },
+    "Numbers": {
+      "type": "TEXT",
+      "creator": "KAHL",
+      "data_fork": "mactext"
+    },
+    "QuickValidate π": {
+      "type": "PROJ",
+      "creator": "KAHL",
+      "resource_fork": "derez",
+      "data_fork": "empty"
+    },
+    "QuickValidate.lib": {
+      "type": "LIB ",
+      "creator": "KAHL",
+      "resource_fork": "derez",
+      "data_fork": "empty"
+    },
+    "QuickValidateSerial.c": {
+      "type": "TEXT",
+      "creator": "KAHL",
+      "data_fork": "mactext"
+    },
+    "QuickValidateSerial.h": {
+      "type": "TEXT",
+      "creator": "KAHL",
+      "data_fork": "mactext"
+    },
+    "RegStatus.c": {
+      "type": "TEXT",
+      "creator": "KAHL",
+      "resource_fork": "derez",
+      "data_fork": "mactext"
+    },
+    "RegStatus.π": {
+      "type": "PROJ",
+      "creator": "KAHL",
+      "resource_fork": "derez",
+      "data_fork": "empty"
+    },
+    "Serial Numbers 1.6": {
+      "type": "TEXT",
+      "creator": "KAHL",
+      "data_fork": "mactext"
+    },
+    "Serial Numbers 1.6.1": {
+      "type": "TEXT",
+      "creator": "KAHL",
+      "data_fork": "mactext"
+    },
+    "Serial Numbers v1.8": {
+      "type": "TEXT",
+      "creator": "KAHL",
+      "data_fork": "mactext"
+    },
+    "Serial Numbers v2.0": {
+      "type": "TEXT",
+      "creator": "KAHL",
+      "data_fork": "mactext"
+    },
+    "Serial Numbers v2.1": {
+      "type": "TEXT",
+      "creator": "KAHL",
+      "resource_fork": "derez",
+      "data_fork": "mactext"
+    },
+    "Serial Numbers v2.2": {
+      "type": "TEXT",
+      "creator": "KAHL",
+      "resource_fork": "derez",
+      "data_fork": "mactext"
+    },
+    "Serial numbers v1.9": {
+      "type": "TEXT",
+      "creator": "KAHL",
+      "data_fork": "mactext"
+    },
+    "Serial π": {
+      "type": "PROJ",
+      "creator": "KAHL",
+      "resource_fork": "derez",
+      "data_fork": "empty"
+    },
+    "StrToBigInt.c": {
+      "type": "TEXT",
+      "creator": "KAHL",
+      "data_fork": "mactext"
+    },
+    "StrToBigInt.h": {
+      "type": "TEXT",
+      "creator": "KAHL",
+      "data_fork": "mactext"
+    },
+    "Test.c": {
+      "type": "TEXT",
+      "creator": "KAHL",
+      "resource_fork": "derez",
+      "data_fork": "mactext"
+    },
+    "TrickyQuickValidateSerial.c": {
+      "type": "TEXT",
+      "creator": "KAHL",
+      "resource_fork": "derez",
+      "data_fork": "mactext"
+    },
+    "TrickyQuickValidateSerial.h": {
+      "type": "TEXT",
+      "creator": "KAHL",
+      "data_fork": "mactext"
+    },
+    "TrickyValidateSerial.c": {
+      "type": "TEXT",
+      "creator": "KAHL",
+      "resource_fork": "derez",
+      "data_fork": "mactext"
+    },
+    "TrickyValidateSerial.h": {
+      "type": "TEXT",
+      "creator": "KAHL",
+      "data_fork": "mactext"
+    },
+    "ValidateSerial π": {
+      "type": "PROJ",
+      "creator": "KAHL",
+      "resource_fork": "derez",
+      "data_fork": "empty"
+    },
+    "ValidateSerial.c": {
+      "type": "TEXT",
+      "creator": "KAHL",
+      "data_fork": "mactext"
+    },
+    "ValidateSerial.h": {
+      "type": "TEXT",
+      "creator": "KAHL",
+      "data_fork": "mactext"
+    },
+    "ValidateSerial.lib": {
+      "type": "LIB ",
+      "creator": "KAHL",
+      "resource_fork": "derez",
+      "data_fork": "empty"
+    }
+  }
+}

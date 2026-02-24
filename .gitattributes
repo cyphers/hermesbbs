@@ -1,0 +1,14 @@
+# Hermes BBS .gitattributes
+
+# DeRez output and metadata are text
+*.r text eol=lf
+.macmeta.json text eol=lf
+
+# AppleSingle fallback files are binary
+*.as binary
+
+# Archive formats are binary
+*.sit binary
+*.cpt binary
+*.zip binary
+*.sea binary

@@ -5,13 +5,8 @@
 # CONFIG VARIABLES
 #
 
-# Configure the location of THINK Pascal; default to the Classic Apps
-# directory, although this can be overriden with the THINK_PASCAL
-# environment variable.
-THINK_PASCAL=${THINK_PASCAL:-"/Applications (Mac OS 9)/THINK Pascal 4.0.2"}
-
 # Locate THINK Pascal's RInclude's folder.
-RINCLUDES="/Users/wprice/src/MacOS9-RIncludes"
+RINCLUDES="~/src/MacOS9-RIncludes"
 
 # Configure the remaining Mac OS X paths that we need for our script.
 PATH=/sbin:/bin:/usr/bin:/Developer/Tools
